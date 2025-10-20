@@ -1,0 +1,24 @@
+leetekwoo:
+  name: 이택우
+  title: Software Engineer
+  url: https://www.linkedin.com/in/tekwoo-lee-60a661337/
+  image_url: https://avatars.githubusercontent.com/u/89988500?v=4/
+  page: true
+  socials:
+    linkedin: leetekwoo
+    github: 0teklee
+
+# 여러분 프로필을 작성해주시면 됩니다.
+# {이름}:
+#   name: Sébastien Lorber
+#   title: Docusaurus maintainer
+#   url: https://sebastienlorber.com
+#   image_url: https://github.com/slorber.png
+#   page:
+#     # customize the url of the author page at /blog/authors/<permalink>
+#     permalink: '/all-sebastien-lorber-articles'
+#   socials:
+#     x: sebastienlorber
+#     linkedin: sebastienlorber
+#     github: slorber
+#     newsletter: https://thisweekinreact.com
