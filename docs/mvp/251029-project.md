@@ -21,6 +21,11 @@ sidebar_position: 3
 
 # 라이브러리 폴더
 
+![503-structure-2](251030-struct-lib.png)
+
+- 프로젝트 구조 및 형태를 임시로 구성해보았습니다. (251030)
+
 ![503-structure](503_team_folder.png)
 
 - 라이브러리 배포를 위한 프로젝트의 폴더를 임시로 구성해보았습니다.
+
