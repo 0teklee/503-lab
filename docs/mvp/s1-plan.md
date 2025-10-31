@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+author: ["leetekwoo"]
 ---
 # MVP 계획서 (FIN)
 
@@ -121,7 +122,7 @@ Sprint 2 목표:
 
 #### Sprint 2
 
-기간: 2025.11.03 ~ 2025.11.14
+기간: 2025.11.17 ~ 2025.11.28
 
 8. **추가 기능 개발**
 
@@ -139,22 +140,17 @@ Sprint 2 목표:
 ![team-st](0-team-detail.png)
 
 - **이택우(팀장)** : 인프라팀 리드, 팀 총괄
-
   - 개발 환경 구축
   - CI/CD 구축
 - **김민지** : 인프라팀
-
   - 개발 환경 구축
   - CI/CD 구축
 - **정동훈** : 코어팀 리드
-
   - 룰셋 구현, 리포터(리포트 포맷/익스포트), 통합 테스트
 - **정완우** : 코어팀
-
   - 스캔 엔진 핵심 로직(크롤러, 요청 변형, 룰 엔진), API 설계
 - **이영광** : 코어팀
-
-  - 데모 UI/대시보드(스캔 결과 시각화), 사용자 플로우 설계, 피그마 시안
+  - 스캔 엔진 핵심 로직(크롤러, 요청 변형, 룰 엔진), API 설계
 
 > 모든 팀원은 코드 리뷰, 문서화, 테스트에 기여합니다.
 
@@ -227,12 +223,12 @@ Sprint 2 :
 
 ### 💠 참고 문헌 및 자료 (추천)
 
-- OWASP Top 10 — 취약점 분류 및 설명 (참고용)
-- OWASP Testing Guide
-- AWS Security Best Practices
-- GitHub OSS 관리 가이드(라이선스·CONTRIBUTING 등)
-- [OWASP ZAP](https://github.com/zaproxy/zaproxy)
-- [w3af](https://github.com/andresriancho/w3af)
-- [nuclei](https://github.com/projectdiscovery/nuclei)
-- [보안클라우드 - 정적분석(SAST) vs 동적분석(DAST)](https://boancloud.co.kr/security-issues/4/)
-- [tiobe](https://www.tiobe.com/tiobe-index/)
+- [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+- [GitHub Advisory Database](https://docs.github.com/ko/code-security/security-advisories/working-with-global-security-advisories-from-the-github-advisory-database/about-the-github-advisory-database)
+  - [보안클라우드 - 정적분석(SAST) vs 동적분석(DAST) 개념](https://boancloud.co.kr/security-issues/4/)
+
+- 오픈 소스 보안 라이브러리 깃헙 레포
+  - [OWASP ZAP](https://github.com/zaproxy/zaproxy)
+  - [w3af](https://github.com/andresriancho/w3af)
+  - [nuclei](https://github.com/projectdiscovery/nuclei)
+  - [tiobe](https://www.tiobe.com/tiobe-index/)
