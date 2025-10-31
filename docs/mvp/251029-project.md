@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# MVP Prototype
+# MVP Structure Prototype
 
 - 25.10.29 작성
 - *이 문서는 초안입니다.*
