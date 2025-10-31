@@ -1,0 +1,65 @@
+---
+sidebar_position: 5
+author: "leetekwoo"
+---
+# 기술 명세서 
+
+- 2025.10.31 작성
+
+---
+
+## 프로젝트 구성
+
+```jsx
+scanner(root) --> 라이브러리 배포
+├── core --> 스캐너 엔진 (크롤러 + 플러그인 개발)
+│   ├── crawler.py
+│   ├── main.py  // --> controller, interface
+│   ├── plugins // --> 공격 유형 별로 플러그인
+│   │     ├── sqli.py // Sql Injection 취약점 조사
+│   │     ├── xss.py // Xss (Crosite Script) 취약점 조사
+│   │     ├── fileupload.py // 파일 업로드 취약점 조사
+│   │     └── .... // 플러그인 별 기능 추가 예정
+│   │   
+│   │
+│   ├── (기타 개발 환경, 의존성 설정 파일 등)
+│   │   # libs / env / ...  
+│   │    
+│   └── README.md      
+│
+│      
+├── test 
+│      └── [함수 모듈 단위 테스트 pyTest] 
+│        - (후순위 작업)
+│      
+├── dev      
+│      └── [로컬/dev 개발 환경용 docker 등 관련 코드] 
+└── deploy  // ---> 환경 설정 
+      ├── 1. npm 배포 분기 `dev`, `prod` 
+      ├── 2. 환경 변수 등 
+      └── 3. 개발 환경 등
+```
+
+---
+
+## 구현 기능 목록
+### MVP : Sprint 1
+
+1. CI / CD 배포파이프라인 구축 : `Jenkins` 사용
+    1. `development` / `production` 머지 후 배포 자동화
+    2. (후순위 작업) 브랜치 병합 시 테스트 코드
+2. 개발 및 배포 환경 관리 및 스크립트 작성
+    1. `CLI` 인터페이스 개발 → `PyPi` 패키지 런타임 실행 
+    2. 브랜치 별 환경변수 관리 및 형상 관리
+3. `core` 팀 서포트
+    1. 기능 구현 후순위 작업 서포트
+
+### Sprint 2
+
+1. AWS SIEM 구축 자동화 스크립트 개발
+    1. `yaml` 탬플릿 작성 
+2. `monorepo` 로 `npm` 패키지 작성
+    1. 스캐너 기능 `CI/CD` 파이프라인 통합
+
+---
+
